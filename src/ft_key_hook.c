@@ -6,7 +6,7 @@
 /*   By: graiolo <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/30 19:52:49 by graiolo           #+#    #+#             */
-/*   Updated: 2023/01/05 15:11:54 by graiolo          ###   ########.fr       */
+/*   Updated: 2023/01/05 15:56:08 by graiolo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 
 int	ft_key_hook(int keycode, t_fractol *ptr)
 {
-	char *out = "out.png"; 
 	if (keycode == ESC)
 		ft_destroy_fractol(ptr);
 	if (keycode == KEY_C)
@@ -31,8 +30,6 @@ int	ft_key_hook(int keycode, t_fractol *ptr)
 		ptr->max_iteration -= 125;
 	if (ptr->max_iteration < 1)
 		ptr->max_iteration = 1;
-	if (keycode == KEY_P)
-		mlx_xpm_to_image(ptr->mlx_ptr, &out, &(ptr->window_width), &(ptr->window_height));
 	ft_arrow_hook(keycode, ptr);
 	ft_hook_switch(keycode, ptr);
 	ft_key_switch(keycode, ptr);
