@@ -6,7 +6,7 @@
 /*   By: graiolo <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/30 16:17:45 by graiolo           #+#    #+#             */
-/*   Updated: 2023/01/05 13:22:53 by graiolo          ###   ########.fr       */
+/*   Updated: 2023/01/05 14:48:57 by graiolo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,8 +41,6 @@ void	user_interface_texts_key(t_fractol *ptr)
 		0xC0C0C0, "125 iterazioni = * e /");
 	mlx_string_put(ptr->mlx_ptr, ptr->mlx_win, 37, 223,
 		0xC0C0C0, "Esci = ESC");
-
-
 }
 
 void	user_interface_texts_mouse(t_fractol *ptr)

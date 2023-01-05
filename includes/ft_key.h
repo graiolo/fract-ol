@@ -6,7 +6,7 @@
 /*   By: graiolo <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/03 16:21:32 by graiolo           #+#    #+#             */
-/*   Updated: 2023/01/03 18:17:48 by graiolo          ###   ########.fr       */
+/*   Updated: 2023/01/05 14:50:23 by graiolo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@
 # define KEY_X 120
 # define KEY_R 114
 # define KEY_S 115
+# define KEY_P 112
 # define ESC 65307
 # define KEY_CTRL 65507
 # define ARROW_LEFT 65361
