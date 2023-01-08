@@ -6,7 +6,7 @@
 /*   By: graiolo <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/30 16:31:16 by graiolo           #+#    #+#             */
-/*   Updated: 2022/12/30 16:31:42 by graiolo          ###   ########.fr       */
+/*   Updated: 2023/01/08 16:00:06 by graiolo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ void	ft_message_error(t_fractol *ptr)
 	ft_printf("1. mandelbrot\t\t\t\t\t\t\t\t       |\n\t| 2. julia +");
 	ft_printf("numero complesso compreso tra -2");
 	ft_printf(".000 e 2.000 (±x.xxx ±x.xxx)       |\n\t| ");
-	ft_printf("3. burning-ship\t\t\t\t\t\t\t       |\n\t|\t\t\t\t\t\t\t\t\t       |\n");
+	ft_printf("3. tricon      \t\t\t\t\t\t\t       |\n\t|\t\t\t\t\t\t\t\t\t       |\n");
 	ft_printf("\t| Il che significa che il vostro input dovrebbe ");
 	ft_printf("assomigliare a questo:\t       |\n\t|\t\t\t\t\t\t\t\t\t       |\n\t| ");
 	ft_printf("./fractol julia -0,823 0,156\t\t\t\t\t\t       |");
