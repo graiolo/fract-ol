@@ -6,7 +6,7 @@
 /*   By: graiolo <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/30 16:31:16 by graiolo           #+#    #+#             */
-/*   Updated: 2023/01/08 16:00:06 by graiolo          ###   ########.fr       */
+/*   Updated: 2023/01/09 09:41:53 by graiolo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ void	ft_julia_usage_message(t_fractol *ptr)
 	ft_printf(" Avrai quindi bisogno di due vaolori ");
 	ft_printf("differenti separati da uno spazio (' ')   |\n\t|\t\t\t\t\t\t\t\t\t\t|");
 	ft_printf("\n\t| Come segue:\t\t\t\t\t\t\t\t \t|\n\t|\t\t\t\t\t\t\t\t\t\t|\n\t| ");
-	ft_printf("\t0.701 -0.382\t\t\t\t\t\t\t\t|\n\t| \t0.000 -0.800\t\t\t\t\t\t\t\t|");
+	ft_printf("\t-0.70 -0.382\t\t\t\t\t\t\t\t|\n\t| \t0.000 -0.800\t\t\t\t\t\t\t\t|");
 	ft_printf("\n\t|\t-0.835 -0.2321\t\t\t\t\t\t\t\t|");
 	ft_printf("\n\t-----------------------------------------------------------");
 	ft_printf("----------------------\n\n");
