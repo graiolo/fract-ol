@@ -26,7 +26,7 @@ int	ft_key_hook(int keycode, t_fractol *ptr)
 		ft_zoom_hook(ZOOM_OUT, ptr->center_x, ptr->center_y, ptr);
 	if (keycode == KEY_ASTERISC && ptr->zoom == true)
 		ptr->max_iteration += 125;
-	if (keycode == KEK_SLASH && ptr->zoom == true)
+	if (keycode == KEY_SLASH && ptr->zoom == true)
 		ptr->max_iteration -= 125;
 	if (ptr->max_iteration < 1)
 		ptr->max_iteration = 1;
