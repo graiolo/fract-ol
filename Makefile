@@ -6,7 +6,7 @@
 #    By: graiolo <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/03 16:18:51 by graiolo           #+#    #+#              #
-#    Updated: 2023/01/05 13:13:39 by graiolo          ###   ########.fr        #
+#    Updated: 2023/07/01 18:52:29 by graiolo          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -48,7 +48,7 @@ RMD				=	rm -rf
 $(ODIR)%.o : $(SRCS_DIR)%.c
 				$(CC) $(CC_FLAGS) -c $< -o $@ -I includes -I minilibx-linux -I libft/include
 
-$(NAME):		dir $(OFILE)
+$(NAME):		$(OFILE)
 				make -sC libft all
 				make -sC minilibx-linux all
 				$(CC) $(CC_FLAGS) -lpthread $(OFILE) -o $(NAME) -L minilibx-linux -lmlx -lXext -lX11 -lm libft/archive/libft.a
@@ -58,13 +58,11 @@ all:			$(NAME)
 clean:
 				make -sC minilibx-linux clean
 				make -sC libft clean
-				$(RMD) $(ODIR)
 				$(RM) $(OFILE)
 
 clean2:
 				make -sC minilibx-linux clean
 				make -sC libft fclean
-				$(RMD) $(ODIR)
 				$(RM) $(OFILE)
 
 fclean:			clean2
@@ -79,11 +77,6 @@ push:
 				git add *
 				git commit -m "auto push"
 				git push
-
-dir:
-	if [ ! -d "$(ODIR)" ]; then \
-		mkdir $(ODIR); \
-	fi
 
 re:				fclean all
 
